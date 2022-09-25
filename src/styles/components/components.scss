@@ -1,0 +1,86 @@
+@import '../variables/fonts';
+@import '../variables/colors';
+@import '../variables/mixins';
+
+/* Header logo styles */
+.header-logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+
+  .header-logo-text {
+    text-transform: uppercase;
+    font-family: $mediumFont;
+    letter-spacing: 2px;
+    margin: 0 0 0 3%;
+    font-size: 12px;
+    width: 150px;
+  }
+}
+
+/* Navbar styles */
+.navbar {
+  .navbar-add-wallet {
+    text-transform: uppercase;
+    border: none;
+    background-color: inherit;
+    font-family: $mediumFont;
+    color: map-get($fontColors, mainPurple);
+    font-size: 12px;
+    letter-spacing: 2px;
+
+    &:hover {
+      cursor: pointer;
+      border-radius: 5px;
+    }
+  }
+}
+
+/* NFT Collection styles */
+.nft-collection-container {
+  margin: 3% 0;
+  display: flex;
+  width: auto;
+  gap: 2%;
+
+  @include tabletSize {
+    margin: 5% 0;
+  }
+
+  /* @include mobileSize {
+    margin: 5% 0;
+  } */
+
+  .nft-collection-item {
+    font-family: $regularFont;
+    margin: 0;
+    margin-bottom: 5%;
+    padding: 10px;
+    height: fit-content;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 36px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+
+    .nft-collection-title {
+      margin: 0;
+      padding: 0 5%;
+
+      p {
+        padding: 0;
+        margin: 5px 0 0;
+        color: map-get($fontColors, mainBlue);
+      }
+
+      h3 {
+        font-family: $xBoldFont;
+      }
+    }
+
+    img {
+      width: 100%;
+      object-fit: cover;
+      border-radius: inherit;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+/* Main fonts styles used in project */
+@font-face {
+  font-family: "HelveticaRegular";
+  src: local("HelveticaRegular"),
+    url("assets/fonts/HelveticaNowDisplayRegular/font.woff") format("woff");
+}
+
+@font-face {
+  font-family: "HelveticaMedium";
+  src: local("HelveticaMedium"),
+    url("assets/fonts/HelveticaNowDisplayMd/font.woff") format("woff");
+}
+
+@font-face {
+  font-family: "HelveticaBold";
+  src: local("HelveticaBold"),
+    url("assets/fonts/HelveticaNowDisplayBd/font.woff") format("woff");
+}
+
+@font-face {
+  font-family: "HelveticaXBold";
+  src: local("HelveticaXBold"),
+    url("assets/fonts/HelveticaNowDisplayXBd/font.woff") format("woff");
+}
+
+$regularFont: "HelveticaRegular";
+$mediumFont: "HelveticaMedium";
+$boldFont: "HelveticaBold";
+$xBoldFont: "HelveticaXBold";

@@ -1,0 +1,115 @@
+/* Main fonts styles used in project */
+@font-face {
+  font-family: "HelveticaRegular";
+  src: local("HelveticaRegular"), url("assets/fonts/HelveticaNowDisplayRegular/font.woff") format("woff");
+}
+@font-face {
+  font-family: "HelveticaMedium";
+  src: local("HelveticaMedium"), url("assets/fonts/HelveticaNowDisplayMd/font.woff") format("woff");
+}
+@font-face {
+  font-family: "HelveticaBold";
+  src: local("HelveticaBold"), url("assets/fonts/HelveticaNowDisplayBd/font.woff") format("woff");
+}
+@font-face {
+  font-family: "HelveticaXBold";
+  src: local("HelveticaXBold"), url("assets/fonts/HelveticaNowDisplayXBd/font.woff") format("woff");
+}
+/* Main font colors */ /* Main fonts styles used in project */
+@font-face {
+  font-family: "HelveticaRegular";
+  src: local("HelveticaRegular"), url("assets/fonts/HelveticaNowDisplayRegular/font.woff") format("woff");
+}
+@font-face {
+  font-family: "HelveticaMedium";
+  src: local("HelveticaMedium"), url("assets/fonts/HelveticaNowDisplayMd/font.woff") format("woff");
+}
+@font-face {
+  font-family: "HelveticaBold";
+  src: local("HelveticaBold"), url("assets/fonts/HelveticaNowDisplayBd/font.woff") format("woff");
+}
+@font-face {
+  font-family: "HelveticaXBold";
+  src: local("HelveticaXBold"), url("assets/fonts/HelveticaNowDisplayXBd/font.woff") format("woff");
+}
+/* Main font colors */
+/* Responsive - mobile size mixin */
+/* Header logo styles */
+.header-logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+.header-logo-wrapper .header-logo-text {
+  text-transform: uppercase;
+  font-family: "HelveticaMedium";
+  letter-spacing: 2px;
+  margin: 0 0 0 3%;
+  font-size: 12px;
+  width: 150px;
+}
+
+/* Navbar styles */
+.navbar-add-wallet {
+  text-transform: uppercase;
+  border: none;
+  background-color: inherit;
+  font-family: "HelveticaMedium";
+  color: #7346f3;
+  font-size: 12px;
+  letter-spacing: 2px;
+
+}
+.navbar-add-wallet:hover {
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* NFT Collection styles */
+.nft-collection-container {
+  margin: 3% 0;
+  display: flex;
+  width: auto;
+  gap: 2%;
+  /* @include mobileSize {
+    margin: 5% 0;
+  } */
+
+}
+@media (max-width: 1100px) {
+  .nft-collection-container {
+    margin: 5% 0;
+
+  }
+}
+.nft-collection-container .nft-collection-item {
+  font-family: "HelveticaRegular";
+  margin: 0;
+  margin-bottom: 5%;
+  padding: 10px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 36px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+.nft-collection-container .nft-collection-item .nft-collection-title {
+  margin: 0;
+  padding: 0 5%;
+}
+.nft-collection-container .nft-collection-item .nft-collection-title p {
+  padding: 0;
+  margin: 5px 0 0;
+  color: #2AA3EF;
+}
+.nft-collection-container .nft-collection-item .nft-collection-title h3 {
+  font-family: "HelveticaXBold";
+}
+.nft-collection-container .nft-collection-item img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: inherit;
+}/*# sourceMappingURL=components.css.map */

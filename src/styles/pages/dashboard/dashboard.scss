@@ -1,0 +1,18 @@
+@import '../../variables/mixins';
+
+/* Dashboard page styles */
+.dashboard-main-container {
+  margin: 0;
+  padding: 3% 6%;
+  box-sizing: border-box;
+
+  @include mobileSize {
+    padding: 6%;
+  }
+
+  .dashboard-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

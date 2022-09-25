@@ -1,0 +1,36 @@
+/* Main fonts styles used in project */
+@font-face {
+  font-family: "HelveticaRegular";
+  src: local("HelveticaRegular"), url("assets/fonts/HelveticaNowDisplayRegular/font.woff") format("woff");
+}
+@font-face {
+  font-family: "HelveticaMedium";
+  src: local("HelveticaMedium"), url("assets/fonts/HelveticaNowDisplayMd/font.woff") format("woff");
+}
+@font-face {
+  font-family: "HelveticaBold";
+  src: local("HelveticaBold"), url("assets/fonts/HelveticaNowDisplayBd/font.woff") format("woff");
+}
+@font-face {
+  font-family: "HelveticaXBold";
+  src: local("HelveticaXBold"), url("assets/fonts/HelveticaNowDisplayXBd/font.woff") format("woff");
+}
+/* Main font colors */
+/* Responsive - mobile size mixin */
+/* Dashboard page styles */
+.dashboard-main-container {
+  margin: 0;
+  padding: 3% 6%;
+  box-sizing: border-box;
+}
+@media (max-width: 800px) {
+  .dashboard-main-container {
+    padding: 6%;
+  }
+}
+.dashboard-main-container .dashboard-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}/*# sourceMappingURL=dashboard.css.map */
+
